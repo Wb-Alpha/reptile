@@ -17,7 +17,7 @@ import json
 pos_url = "https://fanyi.baidu.com/sug"
 # post表单
 data_dict = {
-    "kw": "language"
+    "kw": "apple"
 }
 # url编码
 data = parse.urlencode(data_dict)
@@ -33,7 +33,7 @@ print(text)
 # text是一个str，所以需要进一步解析他
 # json字符串需要使用json解析
 # xml(html)可以使用xml(html)解析
-print(type(text))
+# print(type(text))
 # json字符串编码为json对象
 json_obj = json.loads(text)
 print(json_obj)

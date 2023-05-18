@@ -12,19 +12,19 @@ def print_hi(name):
 # if __name__ == '__main__':
 #     print_hi('PyCharm')
 #
-# url = "http://www.baidu.com"
-#
-# response = request.urlopen(url)
-#
-# print(response)
-# # 读取响应体(此时读取到的是字节流)
-# # print(response.read())
-#
-# # 指定编码集(通常在源码的head标签中有指定）
-# text = response.read().decode("utf-8")
-# # print(text)
-# with open("baidu.html", "w", encoding='utf-8') as fp:
-#     fp.write(text)
+url = "http://www.baidu.com"
+
+response = request.urlopen(url)
+
+print(response)
+# 读取响应体(此时读取到的是字节流)
+# print(response.read())
+
+# 指定编码集(通常在源码的head标签中有指定）
+text = response.read().decode("utf-8")
+# print(text)
+with open("baidu.html", "w", encoding='utf-8') as fp:
+    fp.write(text)
 #
 # # 获取状态码
 # print(response.getcode())
